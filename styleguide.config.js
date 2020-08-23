@@ -9,7 +9,7 @@ module.exports = {
   },
   sections: [
     { name: 'Atoms', components: 'src/lib/patterns/atoms/**/[A-Z]*.{js,jsx,ts,tsx}' },
-    { name: 'Molecules', components: 'src/lib/patterns/molecules/**/[A-Z]*.{js,jsx,ts,tsx}' },
+    // { name: 'Molecules', components: 'src/lib/patterns/molecules/**/[A-Z]*.{js,jsx,ts,tsx}' },
   ],
   ribbon: {
     url: 'https://github.com/johngerome/react-tailwind-ui',
@@ -77,4 +77,5 @@ module.exports = {
 
     return `import { ${name} } from '${pkg.name}';`
   },
+  propsParser: require('react-docgen-typescript').parse,
 }
