@@ -1,4 +1,4 @@
-Button colors:
+Colors:
 
 ```js
 import { Button } from 'react-tailwind-ui';
@@ -44,7 +44,7 @@ import { Button } from 'react-tailwind-ui';
 )
 ```
 
-Button disabled:
+State:
 
 ```js
 import { Button } from 'react-tailwind-ui';
@@ -84,6 +84,37 @@ import { Button } from 'react-tailwind-ui';
     <div className="mr-2">
       <Button color="alert" disabled>
         Alert
+      </Button>
+    </div>
+  </div>
+)
+```
+
+Sizes:
+
+```js
+import { Button } from 'react-tailwind-ui';
+
+(
+  <div className="flex">
+    <div className="mr-2">
+      <Button size="sm">
+        Small
+      </Button>
+    </div>
+    <div className="mr-2">
+      <Button size="md">
+        Medium
+      </Button>
+    </div>
+    <div className="mr-2">
+      <Button size="lg">
+        Large
+      </Button>
+    </div>
+    <div className="mr-2">
+      <Button size="xl">
+        Extra Large
       </Button>
     </div>
   </div>

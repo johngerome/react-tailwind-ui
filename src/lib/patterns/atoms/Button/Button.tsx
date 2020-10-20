@@ -14,7 +14,7 @@ type ButtonProps = {
   endIcon?: React.ReactNode
   fullWidth?: boolean
   href?: string
-  size?: 'small' | 'medium' | 'large'
+  size?: 'sm' | 'md' | 'lg' | 'xl'
   startIcon?: React.ReactNode
   textColor?: string // override text color class
   variant?: 'contained' | 'outlined' | 'text'
@@ -30,7 +30,7 @@ const Button = ({
   endIcon,
   fullWidth = false,
   href,
-  size = 'medium',
+  size = 'md',
   startIcon,
   textColor,
   variant,
@@ -39,10 +39,11 @@ const Button = ({
 }: ButtonProps) => {
   const theme = useTheme();
 
-  const baseClass = 'px-4 py-3';
+  const baseClass = '';
 
   // BG and color
   let colorClass = `bg-${theme.palette[color]}`;
+  let sizeClass = '';
   let classes = className;
 
   if (textColor) {
@@ -65,10 +66,25 @@ const Button = ({
     classes += ' cursor-not-allowed'
   }
 
+  switch(size) {
+    case 'sm':
+      sizeClass = 'px-2 py-1 text-xs';
+      break;
+    case 'md':
+      sizeClass = 'px-4 py-3 text-base';
+      break;
+    case 'lg':
+      sizeClass = 'px-6 py-5 text-lg';
+      break;
+    case 'xl':
+      sizeClass = 'px-10 py-8 text-xl';
+      break;
+  }
+
   return (
     <button
       type="button"
-      className={`${baseClass} ${colorClass} ${classes}`}
+      className={`${baseClass} ${colorClass} ${sizeClass} ${classes}`}
       onClick={onClick}
       disabled={disabled}
       {...rest}
