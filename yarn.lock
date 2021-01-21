@@ -6087,6 +6087,13 @@ get-best-contrast-color@^0.3.1:
   dependencies:
     get-contrast-ratio "0.2.1"
 
+get-best-contrast-color@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/get-best-contrast-color/-/get-best-contrast-color-0.3.1.tgz#e13e0ea32d82871ccdfb742ccab1d6e07b137f44"
+  integrity sha512-B88vyjLzu+fDq2mMky/75pg14Pwgb9Zl6RZ3ws43Jyk4tsdvgiF/KAvRkFZAaMEgd1HTuykKg0GaG2KnsBoaCA==
+  dependencies:
+    get-contrast-ratio "0.2.1"
+
 get-caller-file@^2.0.1:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
