@@ -18,6 +18,9 @@
     "isolatedModules": true,
     "jsx": "react"
   },
+  "exclude": [
+    "dist",
+  ],
   "include": [
     "src"
   ]
